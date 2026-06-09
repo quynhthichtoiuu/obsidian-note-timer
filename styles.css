@@ -1,0 +1,143 @@
+/* Note Timer Plugin Styles */
+.block-language-timer,
+.block-language-timer pre,
+.block-language-timer code,
+.markdown-preview-view .block-language-timer {
+  background: none !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.timer-buttons {
+  display: inline-flex !important;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--background-modifier-border);
+  border-radius: 6px;
+}
+
+.timer-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+}
+
+.timer-btn:hover {
+  opacity: 0.85;
+}
+
+/* iOS-style Modal */
+.modal:has(.timer-modal) {
+  max-width: 360px !important;
+  width: 360px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.modal:has(.timer-modal) .modal-close-button {
+  display: none !important;
+}
+
+.modal:has(.timer-modal) .modal-content {
+  padding: 0 !important;
+}
+
+.timer-modal {
+  padding: 24px 28px 20px 28px !important;
+}
+
+.timer-modal-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.timer-modal-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.timer-modal-text {
+  flex: 1;
+  text-align: left;
+}
+
+.timer-modal-title {
+  margin: 0 0 4px 0 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: var(--text-normal) !important;
+}
+
+.timer-modal-desc {
+  margin: 0 !important;
+  font-size: 15px !important;
+  color: var(--text-muted) !important;
+  line-height: 1.4;
+}
+
+.timer-modal-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.timer-modal-input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 17px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 12px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  outline: none;
+}
+
+.timer-modal-input:focus {
+  border-color: #007aff;
+}
+
+.timer-modal-input-suffix {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.timer-modal-buttons {
+  display: flex;
+  justify-content: right;
+  gap: 24px;
+  padding-top: 12px;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+button.timer-modal-btn {
+  padding: 8px 12px !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  border: none !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+  transition: background 0.15s ease !important;
+}
+
+button.timer-modal-btn-primary {
+  color: #007aff !important;
+  font-weight: 600 !important;
+}
+
+button.timer-modal-btn-danger {
+  color: var(--text-muted) !important;
+}
+
+button.timer-modal-btn:hover {
+  background: var(--background-modifier-hover) !important;
+}

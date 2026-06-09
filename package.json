@@ -1,0 +1,20 @@
+{
+  "name": "obsidian-note-timer",
+  "version": "1.0.0",
+  "description": "Track time spent on notes with start/stop timer",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production"
+  },
+  "keywords": ["obsidian", "timer", "time-tracking"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.17.0",
+    "obsidian": "latest",
+    "typescript": "^5.0.0"
+  }
+}
